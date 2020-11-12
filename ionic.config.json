@@ -1,0 +1,7 @@
+{
+  "name": "cnhApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

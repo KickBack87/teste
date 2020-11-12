@@ -1,0 +1,32 @@
+<ion-header class="test">
+<ion-content [fullscreen]="true" class="ion-padding">
+<!-- <ion-text>
+  <h1>Bem Vindo.</h1>
+  <p>Comece agora mesmo logando<br> sua conta</p>
+</ion-text> -->
+ <div class="actions">
+   <div class="login-buttons">
+     <ion-button>
+       <ion-avatar>
+         <img src="assets/icon/facebook.png">
+       </ion-avatar>
+       <ion-label>Facebook</ion-label>
+     </ion-button>
+
+     <ion-button>
+      <ion-avatar>
+        <img src="assets/icon/google.png">
+      </ion-avatar>
+      <ion-label>Google</ion-label>
+    </ion-button>
+   </div>
+   <div class="separator">
+     <span class="or">ou</span>
+     <span class="line left"></span>
+     <span class="line right"></span>
+   </div>
+   <ion-button class="signup-btn"  (click)='cadastrarLogin()' expand="block">Cadastre-se com Email</ion-button>
+   <p class="login" (click)="loginModal()"><b>Usuarios existente?</b><a>Logue-se agora</a></p>
+ </div>
+</ion-content>
+</ion-header>

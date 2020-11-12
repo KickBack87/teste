@@ -1,0 +1,91 @@
+.toolbar{
+    background-color: black;
+    height: 60px;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+  }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+  }
+
+  .ion-header{
+    margin-bottom: 0;
+}
+
+.toolbar{
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+  }
+
+.card-img-overlay{
+    background-image: url('/assets/imagens/sobre3.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    height: 100px;
+    padding-top: 0;
+}
+
+.h2{
+    font-size: 50px;
+    font-weight: 900;
+    color: #ffffff;
+    margin-top: 3%;
+    text-shadow: 10px 10px 10px #000000;
+}
+h3{
+    padding-top: 20px;
+    font-family: Georgia;
+    font-size: 30px;
+}
+.caret{
+    color: red;
+    margin-right: 5px;
+} 
+.md-form{
+    padding-bottom: 10px;
+}
+span{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+} 
+p{
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+} 
+
+    h2{
+        font-size: 30px;
+        font-weight: 900;
+        color: #ffffff;
+        margin-top: 0%;
+        text-shadow: 5px 5px 10px #000000;
+    }
+        
+    .rodape{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    

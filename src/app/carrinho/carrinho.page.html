@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar">
+    <img src="../assets/icon/1.png" class="imagem"/>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="cabeçalho">
+    Carrinho de Compras
+  </div>
+  <ion-card>
+  <ion-list>
+    <ion-item *ngFor="let prod of produtos">
+      <div>
+      <h2 class="nome">{{prod.nome}}</h2>
+    </div>
+    <div>
+      <p class="valor">Valor {{prod.preco | currency:'BRL'}}</p>
+    </div>
+    <div class="alinhamento" align="center">
+      <ion-icon name="add-circle" color="primary"></ion-icon>
+      <p class="nolineBreak">{{prod.quantidade}}</p>
+      <ion-icon class="nolineBreak" name="remove-circle" color="primary"></ion-icon>
+    </div>
+    <div align="left" width="10px">
+      <p class="tot">Total {{prod.total | currency:'BRL'}}</p>
+      <ion-icon class="lixeira" name="trash" item-end color="danger"></ion-icon>
+    </div>
+    </ion-item>
+    <ion-item>
+      <ion-button (click)='atualizarCarrinho'>Atualize o carrinho</ion-button>
+      <ion-button (click)='pagamento()'>Efetuar Pagamento</ion-button>
+    </ion-item>
+  </ion-list>
+  </ion-card>
+  
+  <ion-footer class="ion-no-border">
+    <img src="assets/imagens/11.png" class="rodape"/>   
+  </ion-footer>
+</ion-content>

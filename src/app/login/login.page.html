@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="voltarInicio()" color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <div id="header">
+    <h1>Login</h1>
+    <img src="assets/icon/avatar.png" />
+  </div>
+
+  <form id="form">
+    <ion-item class="roundedInput">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-input class="phs" name="email" type="email" placeholder="Digite seu email" [(ngModel)]="autenticacao.email"></ion-input>
+    </ion-item>
+    <ion-item class="roundedInput" style="margin-top: 15px;" >
+      <ion-icon  name="lock-closed-outline"></ion-icon>
+      <ion-input class="phs" name="password" type="password" placeholder="Digite sua senha" [(ngModel)]="autenticacao.senha"></ion-input>
+    </ion-item>
+    <ion-button (click)="logar()" expand="block" shape="round">Login</ion-button>
+  </form>
+</ion-content>

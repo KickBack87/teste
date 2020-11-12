@@ -1,0 +1,109 @@
+.toolbar{
+    background-color: black;
+    height: 60px;
+    align-items: center;
+    padding-top: 15px;
+    
+}
+
+.imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+  }
+
+.promocoes{
+    text-align: center;
+}
+.infracoes{
+    text-align: center;
+    display: block;
+    margin-left: -90px;
+}
+.suspensoes{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sos{
+    text-align: center;
+}
+
+.parcerias{
+    text-align: center;
+}
+
+.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    object-position: top;
+    height: 600px;
+    background-size: cover;
+    width: 100%;
+}
+
+.bg{
+    width: 400px;
+    height: 300px;
+    padding-left:0;
+    padding-right: 0;
+    padding-top: 0;
+}
+
+.bg1{
+    width: 300px;
+    height: 300px;
+    padding-left:0;
+    padding-right: 0;
+    padding-top: 0;
+    text-align: left;
+}
+
+.ion-img{
+    width: 10px;
+    height: 50px;
+}
+
+.titulo{
+    color: rgb(200, 71, 30);
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+}
+
+.resumo{
+    font-family: 'Lato', sans-serif;
+    color:rgb(99, 96, 102);
+}
+
+.saibamais{
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.bg2{
+    opacity: 0.5;
+}
+
+.comerciais{
+    margin-top: 10px;
+    font-family: 'Lato', sans-serif;
+}
+
+.news{
+    margin-bottom: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.rodape{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

@@ -1,0 +1,99 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar">
+    <img src="../assets/icon/1.png" class="imagem"/>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-title class="titulo">Infração:</ion-card-title>
+      <ion-card-header class="cabeçalho">
+        
+          <ion-label class="labeltxt"> Quais infrações gostaria de recorrer ?</ion-label><br/><br/>
+          <ion-label class="labeltxt"><strong>Dados da infração</strong></ion-label><br/><br/>
+          <ion-label class="labeltxt"> Artigo / Infração / Pontuação</ion-label><br/><br/>
+          
+        
+        <ion-toolbar>
+          <ion-searchbar></ion-searchbar>
+        </ion-toolbar>
+      </ion-card-header>
+      <ion-card-content>
+     <ion-list>
+
+<ion-radio-group value="biff">
+  <ion-list-header class="label1">
+    <ion-label class="labeltxt">Fase de defesas tempestivas (infrações com prazo de recurso administrativo aberto): </ion-label>
+  </ion-list-header>
+  
+  <ion-item>
+    <ion-label class="ion-text-wrap">Defesa Prévia (Atuação)</ion-label>
+    <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="ion-text-wrap">1º Instância (JARI - Penalidade Registrada)</ion-label>
+    <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+
+  </ion-item>
+
+
+<ion-item>
+  <ion-label class="ion-text-wrap">2º Instancia (CETRAN) </ion-label>
+  <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+  
+</ion-item>
+<br/>
+<ion-label class="labeltxt">Defesa Intempestiva:</ion-label><br/>
+<ion-item>
+  <ion-label class="ion-text-wrap">Multa constando como ' transito em julgado.' </ion-label>
+  <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+  
+</ion-item>
+
+</ion-radio-group>
+
+<br/>
+
+Campo não Obrigatório,caso queria relatar algo pertinente sobre a infração,relate na caixa abaixo.
+<ion-item class="ph">
+  <ion-label position="floating" ></ion-label>
+  <ion-textarea placeholder=""></ion-textarea>
+</ion-item>
+<div class="divButton">
+<ion-button class="enviar" size="small" color="light">Enviar</ion-button>
+</div>
+<ion-item>
+<ion-button (click)='voltarDoc()'> <- Voltar</ion-button>
+<ion-button (click)='avancarPag()'>Continuar -> </ion-button>
+</ion-item>
+
+
+</ion-list>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-footer class="ion-no-border">
+      <img src="assets/imagens/11.png" class="rodape"/>   
+    </ion-footer>
+</ion-content>
+<script>
+  const searchbar = document.querySelector('ion-searchbar');
+  const items = Array.from(document.querySelector('ion-list').children);
+
+  searchbar.addEventListener('ionInput', handleInput);
+
+  function handleInput(event) {
+    const query = event.target.value.toLowerCase();
+    requestAnimationFrame(() => {
+      items.forEach(item => {
+        const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
+        item.style.display = shouldShow ? 'block' : 'none';
+      });
+    });
+  }
+</script>

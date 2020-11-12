@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <div class="toolbar">
+    <img src="../assets/icon/1.png" class="imagem"/>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+    <ion-card-title class="titulo">Documentação Necessária:</ion-card-title>
+      <ion-card-header class="cabeçalho">
+        <strong>Faça Uplodad ou tire fotos dos documentos necessários abaixo:</strong><br>
+           
+      </ion-card-header>
+      <ion-card-content>
+     <ion-list>
+
+<ion-radio-group value="biff">
+  <ion-list-header class="label1">
+    <ion-label class="labeltxt">Lista de documentos obrigatórios e facultativos.Em seguida clique no botão continuar. </ion-label>
+  </ion-list-header>
+  <br/>
+
+  
+  <ion-item>
+    <ion-label class="ion-text-wrap">CNH aberta ou RG aberto com CPF (Obrigatório)</ion-label>
+    <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+    
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="ion-text-wrap">Comprovante de Residência (Obrigatório)</ion-label>
+    <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+
+  </ion-item>
+
+
+<ion-item>
+  <ion-label class="ion-text-wrap">CRLV (Facultativo) </ion-label>
+  <ion-checkbox color="secondary" checked slot="start"></ion-checkbox>
+  
+</ion-item>
+
+</ion-radio-group>
+
+<br/>
+
+
+<ion-item class="ph">
+  <ion-label position="floating" >Observações</ion-label>
+  <ion-textarea placeholder="Imagem deve estar légivel,sem cortes. Comprovantes de residência pode estar em nome de terceiros(Pai,Mãe,filho ou cônjugue). É valido como comprovante qualquer correspondência(ex:cartão de crédito,luz,água,gás,...)"></ion-textarea>
+</ion-item>
+
+<ion-item>
+<ion-button (click)='voltarPagTab2()'> <- Voltar</ion-button>
+<ion-button (click)='avancarPagIn()'>Continuar -> </ion-button>
+</ion-item>
+
+
+</ion-list>
+      </ion-card-content>
+    </ion-card>
+
+  <ion-footer class="ion-no-border">
+      <img src="assets/imagens/11.png" class="rodape"/>   
+    </ion-footer>
+</ion-content>

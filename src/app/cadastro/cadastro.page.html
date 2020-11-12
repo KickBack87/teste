@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="voltarInicio()" color="primary">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="loginModal()">Login</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <h1>Cadastre-se</h1>
+
+  <form id="form">
+
+    <ion-item class="roundedInput">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      <ion-input class="phs" type='text' name='nome' placeholder="Digite seu nome"  [(ngModel)]='login.nome'></ion-input>
+    </ion-item>
+
+    <ion-item class="roundedInput" style="margin-top: 15px;">
+      <ion-icon name="logo-whatsapp"></ion-icon>
+      <ion-input class="phs" type='text' name='teçefone' placeholder="Digite seu telefone"  [(ngModel)]='login.telefone'></ion-input>
+    </ion-item>
+
+    <ion-item class="roundedInput" style="margin-top: 15px;">
+      <ion-icon name="mail-outline"></ion-icon>
+      <ion-input class="phs" type='text' name='email' placeholder="Digite seu email"  [(ngModel)]='login.email'></ion-input>
+    </ion-item>
+
+
+    <ion-item class="roundedInput" style="margin-top: 15px;">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+      <ion-input class="phs" type='password' name='senha' placeholder="Digite sua senha"  [(ngModel)]='login.senha'></ion-input>
+    </ion-item>
+
+    <ion-button (click)='registrar();' expand="block" shape="round" size='block'>Cadastrar</ion-button>
+  </form>
+
+  <p>Pressionando 'Cadastrar' voce concorda com <br />
+    nossos termos e condicoes.</p>
+</ion-content>

@@ -1,0 +1,124 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <div class="toolbar">
+      <img src="../assets/icon/1.png" class="imagem"/>
+    </div>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content padding>
+
+    <ion-card>
+      <ion-card-title class="titulo">Informe qual orgão aplicou a infração:</ion-card-title>
+        <ion-card-header class="cabeçalho">
+            Lista de Órgãos Públicos<br>
+             
+        </ion-card-header>
+        <ion-card-content>
+       <ion-list>
+  <ion-radio-group value="biff">
+    <ion-list-header class="label1">
+      <ion-label class="labeltxt">Clique no círculo abaixo para selecionar qual orgão publico lhe aplicou a multa.Em seguida clique no botão continuar. </ion-label>
+    </ion-list-header>
+    <br/>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-thumbnail slot="start">
+              <img style="height:70px" src="../assets/imagens/rio21.png"/>
+              </ion-thumbnail>
+             
+             <br/>
+              <div>
+              <ion-label>PMRJ</ion-label>
+              </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-thumbnail slot="start">
+              <img style="height:70px" src="../assets/imagens/detran1.png"/>
+              </ion-thumbnail>
+             
+             <br/>
+              <div>
+              <ion-label>DETRAN</ion-label>
+              </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-thumbnail slot="start">
+              <img style="height:70px" src="../assets/imagens/der.png"/>
+              </ion-thumbnail>
+             
+             <br/>
+              <div>
+              <ion-label>DER-RJ</ion-label>
+              </div>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-thumbnail slot="start">
+              <img style="height:60px; width:60px" src="../assets/imagens/dinit2.png"/>
+              </ion-thumbnail>
+             
+             <br/>
+              <div>
+              <ion-label>DNIT</ion-label>
+              </div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+   <br/>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">PMRJ - Infrações que começam somente com a letra "B"</ion-label>
+      <ion-radio slot="start" value="L987654321"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label class="ion-text-wrap">DETRAN - Infrações que começam somente com a letra "E" ou "C" </ion-label>
+      <ion-radio slot="start" value="L789456123"></ion-radio>
+    </ion-item>
+ 
+
+  <ion-item>
+    <ion-label class="ion-text-wrap">DER-RJ - Infrações que começam somente com a letra "X","Y" ou "Z" </ion-label>
+    <ion-radio slot="start" value="L789456122"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="ion-text-wrap">DNIT - Infrações que começam somente com a letra "I"</ion-label>
+    <ion-radio slot="start" value="L789456124"></ion-radio>
+  </ion-item>
+
+  <ion-item>
+    <ion-label class="ion-text-wrap">Demais municipios do Estado do RJ - Infrações que não começam com as letras citadas anteriomente</ion-label>
+    <ion-radio slot="start" value="L789456125"></ion-radio>
+  </ion-item>
+
+  
+
+  </ion-radio-group>
+
+  
+  <ion-item>
+  <ion-button (click)='voltarPag()'> <- Voltar</ion-button>
+  <ion-button (click)='avancarPag()'>Continuar -> </ion-button>
+</ion-item>
+
+
+</ion-list>
+        </ion-card-content>
+      </ion-card>
+
+    <ion-footer class="ion-no-border">
+        <img src="assets/imagens/11.png" class="rodape"/>   
+      </ion-footer>
+</ion-content>
