@@ -9,6 +9,7 @@
     padding-top: 15px;
 }
 
+
 .imagem {
     display: block;
     margin-left: auto;
@@ -20,67 +21,62 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 70px;
+    width: 80px;
   }
 
-.card-img-overlay{
-    background-image: url('/assets/imagens/sobre3.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    position: relative;
-    height: 100px;
-    padding-top: 0;
-}
+  .titulo{
+      text-align: center;
+      color: #DD431E;
+      padding-top: 15px;
+      padding-bottom: 5px;
+  }
 
-.h2{
-    font-size: 50px;
-    font-weight: 900;
-    color: #ffffff;
-    margin-top: 3%;
-    text-shadow: 10px 10px 10px #000000;
-}
-h3{
-    padding-top: 20px;
-    font-family: Georgia;
-    font-size: 30px;
-}
-.caret{
-    color: red;
-    margin-right: 5px;
-} 
-.md-form{
-    padding-bottom: 10px;
-}
-span{
-    color: red;
-    font-size: 13px;
-    font-weight: bold;
-} 
-p{
-    line-height: 2;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
-} 
+  .cabeçalho{
+      color: black;
+      text-align: center;
+      font-weight: 400;
+  }
 
- 
-    header{
-        background-image: url('/assets/imagens/sobre3.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        position: relative;
-        height: 150px;
-    }
-    h2{
-        font-size: 30px;
-        font-weight: 900;
-        color: #ffffff;
-        margin-top: 0%;
-        text-shadow: 5px 5px 10px #000000;
-    }
+  .label1{
+      margin-bottom: 20px;
+  }
+
+  .labeltxt{
+      color: black;
+      
+  }
+
+  .ph{
+    border-style: inset;
+    border-width: 2px;
+    margin-top: 20px;
+  }
         
-    .rodape{
+.rodape{
         display: block;
         margin-left: auto;
         margin-right: auto;
-    }
-    
+}
+
+ion-button{
+    --border-radius:9px;
+    --box-shadow: none;
+    text-transform: initial;
+    font-size:12px;
+  }
+  
+  ion-button{
+      margin-top: 35px;
+    width:100%;
+    --background:#DD431E;
+    --color:#fafafa;
+    --border-style:solid;
+    --border-color: black;
+    --border-width:0.5px;
+  }
+
+  .pesquisa{
+
+    margin-top: 20px;
+
+  }

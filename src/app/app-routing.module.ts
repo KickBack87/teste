@@ -48,7 +48,8 @@ const routes: Routes = [
   {
     path: 'infracao',
     loadChildren: () => import('./infracao/infracao.module').then( m => m.InfracaoPageModule)
-  }
+  },
+ 
 ];
 @NgModule({
   imports: [
